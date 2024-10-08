@@ -30,7 +30,7 @@ It has a modern and intuitive Web interface, ensuring an exceptional user experi
 ## Setup:🗣
 ### 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/DevAdy/J.A.R.V.I.S..git
 cd <project-directory>
 ```
 ### 2. Install the required packages:
