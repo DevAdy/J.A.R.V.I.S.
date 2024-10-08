@@ -1,5 +1,5 @@
 # J.A.R.V.I.S : 🧠
-![JARVIS AI](/jarvis.jpg)
+<centre>![JARVIS AI](/jarvis.jpg)</centre>
 <p align="center">
   <small><small><em>Image source: <a href="https://at.pinterest.com/pin/715439090790098312/">Pinterest</a></em></small></small>
 </p>
