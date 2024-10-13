@@ -1,5 +1,5 @@
 # J.A.R.V.I.S : 🧠
-<centre>![JARVIS AI](/jarvis.jpg)</centre>
+<centre>![JARVIS AI](/images/jarvis.jpg)</centre>
 <p align="center">
   <small><small><em>Image source: <a href="https://at.pinterest.com/pin/715439090790098312/">Pinterest</a></em></small></small>
 </p>
@@ -90,16 +90,16 @@ Open a web browser and navigate to the Ngrok public URL to access the voice assi
   <em>J.A.R.V.I.S in action!</em>
 </p>
 
- ![JARVIS in Action](/1-Out.png)
- ![JARVIS in Action](/2-out.png)
- ![JARVIS in Action](/3-out.png)
- ![JARVIS in Action](/4-out.png)
+ ![JARVIS in Action](/images/1-Out.png)
+ ![JARVIS in Action](/images/2-out.png)
+ ![JARVIS in Action](/images/3-out.png)
+ ![JARVIS in Action](/images/4-out.png)
 
 
 ## Demo Video 📽️
 Watch a demo of J.A.R.V.I.S. in action:
 
-[![JARVIS Demo](/jarvis-play.jpg)](https://youtu.be/piN19wG59RA?si=J-IebIWzW1kC8pcc)
+[![JARVIS Demo](/images/jarvis-play.jpg)](https://youtu.be/piN19wG59RA?si=J-IebIWzW1kC8pcc)
 <p align="center">
   <small><small><em>Image source: <a href="https://www.vecteezy.com/vector-art/44856760-black-and-blue-futuristic-gaming-background-with-technology-concept">Vecteezy.com</a></em></small></small>
 </p>
