@@ -86,6 +86,23 @@ Open a web browser and navigate to the Ngrok public URL to access the voice assi
  - Click again on the Human circle to record your voice for continuing the conversation with the AI.
  - You can say 'Thank you.' to end the conversation with the AI.
  - It stops recording when silence is detected.
+<p align="center">
+  <em>J.A.R.V.I.S in action!</em>
+</p>
+
+ ![JARVIS in Action](/1-Out.png)
+ ![JARVIS in Action](/2-out.png)
+ ![JARVIS in Action](/3-out.png)
+ ![JARVIS in Action](/4-out.png)
+
+
+## Demo Video 📽️
+Watch a demo of J.A.R.V.I.S. in action:
+
+[![JARVIS Demo](/jarvis-play.jpg)](/Recorded-Jarvis.mp4)
+<p align="center">
+  <small><small><em>Image source: <a href="https://www.vecteezy.com/vector-art/44856760-black-and-blue-futuristic-gaming-background-with-technology-concept">Vecteezy.com</a></em></small></small>
+</p>
 
  ## Project Structure 🦚
  - **app.py**: Main Flask application
