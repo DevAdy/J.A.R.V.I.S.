@@ -99,7 +99,7 @@ Open a web browser and navigate to the Ngrok public URL to access the voice assi
 ## Demo Video 📽️
 Watch a demo of J.A.R.V.I.S. in action:
 
-[![JARVIS Demo](/jarvis-play.jpg)](/Recorded-Jarvis.mp4)
+[![JARVIS Demo](/jarvis-play.jpg)](https://youtu.be/piN19wG59RA?si=J-IebIWzW1kC8pcc)
 <p align="center">
   <small><small><em>Image source: <a href="https://www.vecteezy.com/vector-art/44856760-black-and-blue-futuristic-gaming-background-with-technology-concept">Vecteezy.com</a></em></small></small>
 </p>
