@@ -9,12 +9,11 @@ class Ai_assistant:
         self.groq_client = Groq(api_key=os.getenv("GROQ_API_KEY"))
         self.full_transcript = [{"role": "system", "content": "Respond like Jarvis from Iron Man—concise, highly intelligent, and formal. Use advanced language, technical precision, and maintain a respectful tone, keeping responses under 50 characters."}]
         self.sample_rate = 16000
-        self.silence_threshold = 0.05
-        self.silence_duration = 1.0
+        self.silence_threshold = 0.06
+        self.silence_duration = 1.2
         self.chunk_duration = 0.2
         self.google_tts_client = texttospeech_v1.TextToSpeechClient()
         
-
     def is_silence(self, audio_chunk):
         max_volume = np.max(np.abs(audio_chunk))
         print(f"max_volume: {max_volume}")
