@@ -13,7 +13,7 @@ os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = os.getenv("GOOGLE_APPLICATION_CRE
 app = Flask(__name__)
 CORS(app)
 
-assistant = Ai_assistant()
+assistant = Ai_assistant(system_prompt_file=r"PATH: GIVE A TEXT FILE OF PROMPTS")
 
 @app.route('/')
 def index():

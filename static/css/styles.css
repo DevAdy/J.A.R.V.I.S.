@@ -13,6 +13,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    height: 400px;
+    justify-content: flex-start;
+    padding-top: 50px;
 }
 .circle {
     width: 250px;
@@ -24,7 +28,7 @@ body {
     font-size: 24px;
     color: white;
     position: relative;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease,margin-bottom 0.5s ease;
     margin-bottom: 20px;
 }
 .circle:hover {
@@ -48,23 +52,29 @@ body {
     }
 }
 .message {
-    background-color: white;
-    color: #1a1a2e;
+    background-color: #1a1a2e;
+    color: #ffffff;
     padding: 10px 15px;
     border-radius: 20px;
-    font-size: 16px;
+    font-size: 20px;
     opacity: 0;
     transition: all 0.5s ease;
-    max-width: 200px;
-    text-align: left;
+    max-width: 300px;
+    text-align: center;
     min-height: 60px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    max-height: 100px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    max-height: none;
+    overflow: visible;
+    text-overflow: initial;
+    white-space: normal;
+    word-wrap: break-word;
+    position: absolute;
+    top: 480px;
+    /* Added transform for initial state */
+    transform: translateY(0);
+    pointer-events: none;
 }
 .show-message {
     opacity: 1;
@@ -92,44 +102,4 @@ body {
     100% {
         transform: translateY(-10vh) scale(1);
     }
-}
-.terminal {
-    background-color: #000;
-    color: #fdfdfd;
-    border-radius: 10px;
-    padding: 10px;
-    width: 300px;
-    height: 200px;
-    overflow-y: auto;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 14px;
-    margin-top: 20px;
-    scrollbar-width: thin;
-    scrollbar-color: #444 #222;
-}
-.terminal::-webkit-scrollbar {
-    width: 8px;
-}
-
-.terminal::-webkit-scrollbar-track {
-    background: #222;
-}
-
-.terminal::-webkit-scrollbar-thumb {
-    background-color: #444;
-    border-radius: 4px;
-}
-
-.terminal::-webkit-scrollbar-thumb:hover {
-    background-color: #555;
-}
-.terminal p {
-    margin: 0 0 10px 0;
-    line-height: 1.4;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-}
-.terminal .prefix {
-    font-weight: bold;
-    color: #ff9900;
 }

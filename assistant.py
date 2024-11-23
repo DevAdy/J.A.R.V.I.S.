@@ -5,12 +5,18 @@ from groq import Groq
 from google.cloud import texttospeech_v1
 
 class Ai_assistant:
-    def __init__(self):
+    def __init__(self,system_prompt_file=None):
         self.groq_client = Groq(api_key=os.getenv("GROQ_API_KEY"))
-        self.full_transcript = [{"role": "system", "content": "Respond like Jarvis from Iron Man—concise, highly intelligent, and formal. Use advanced language, technical precision, and maintain a respectful tone, keeping responses under 50 characters."}]
+                # Read system prompt from file if provided, otherwise use default
+        if system_prompt_file and os.path.exists(system_prompt_file):
+            with open(system_prompt_file, 'r') as f:
+                system_prompt = f.read().strip()
+        else:
+            system_prompt = "Respond like Jarvis from Iron Man—concise, highly intelligent, and formal. Use advanced language, technical precision, and maintain a respectful tone, keeping responses under 50 characters."
+        self.full_transcript = [{"role": "system", "content": system_prompt}]
         self.sample_rate = 16000
-        self.silence_threshold = 0.06
-        self.silence_duration = 1.2
+        self.silence_threshold = 0.05
+        self.silence_duration = 1.0
         self.chunk_duration = 0.2
         self.google_tts_client = texttospeech_v1.TextToSpeechClient()
         

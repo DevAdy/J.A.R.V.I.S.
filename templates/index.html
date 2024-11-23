@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advanced Animated Conversation with Terminals</title>
+    <title>Echo Ai</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
@@ -13,14 +13,12 @@
             Human
         </div>
         <div class="message" id="humanMessage"></div>
-        <div class="terminal" id="humanTerminal"></div>
     </div>
     <div class="container">
         <div class="circle ai">
-            Jarvis
+            Echo Ai
         </div>
         <div class="message" id="aiMessage"></div>
-        <div class="terminal" id="aiTerminal"></div>
     </div>
     <audio id="aiAudio" style="display: none;"></audio>
     <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>

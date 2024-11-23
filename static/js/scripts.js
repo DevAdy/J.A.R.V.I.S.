@@ -3,8 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const aiCircle = document.querySelector('.ai');
     const humanMessage = document.getElementById('humanMessage');
     const aiMessage = document.getElementById('aiMessage');
-    const humanTerminal = document.getElementById('humanTerminal');
-    const aiTerminal = document.getElementById('aiTerminal');
     const audio = document.getElementById('aiAudio');
     let mediaRecorder;
     let audioChunks = [];
@@ -85,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(response => response.json())
         .then(data => {
             const transcription = data.transcription.trim();
-            updateUI('Human', transcription, humanMessage, humanTerminal);
+            updateUI('Human', transcription, humanMessage);
             return fetch('/generate-response', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
@@ -97,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const aiResponse = data.response;
             if (!aiResponse) return;
 
-            updateUI('Jarvis', aiResponse, aiMessage, aiTerminal);
+            updateUI('Jarvis', aiResponse, aiMessage);
             aiCircle.classList.add('speaking');
 
             audio.src = data.audio_file;
@@ -110,18 +108,10 @@ document.addEventListener('DOMContentLoaded', function() {
         .catch(error => console.error('Error:', error));
     }
 
-    function updateUI(prefix, message, messageElement, terminalElement) {
-        messageElement.textContent = truncateText(message, 25);
+    function updateUI(prefix, message, messageElement) {
+        messageElement.textContent = message;
         messageElement.classList.add('show-message');
         setTimeout(() => messageElement.classList.remove('show-message'), 3500);
-
-        const newMessage = `<p><span class="prefix">${prefix}: </span>${message}</p>`;
-        terminalElement.innerHTML += newMessage;
-        terminalElement.scrollTop = terminalElement.scrollHeight;
-    }
-    function truncateText(text, maxLength) {
-        if (text.length <= maxLength) return text;
-        return text.substr(0, maxLength - 3) + '...';
     }
     const particlesContainer = document.querySelector('.particles');
     for (let i = 0; i < 50; i++) {
